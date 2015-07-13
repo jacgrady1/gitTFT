@@ -9,8 +9,8 @@ urlpatterns = patterns('',
     # tool page 
     url(r'^$', 'app_TFT.views.app',name='app'), 
     
-    # course page 
-    #url(r'^course/(?P<id>\d+)$', 'app_TFT.views.course', name='course'),
+    # course page /(?P<id>\d+) 
+    url(r'^course$', 'app_TFT.views.course', name='course'),
 
 
     # login/logout
