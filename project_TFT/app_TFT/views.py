@@ -25,6 +25,7 @@ def course(request,id):
     else if id==2:
         context={}
     else if id==3:
-        context={}    
+        context={}
+        
     return render(request,"course.html",context)
     
