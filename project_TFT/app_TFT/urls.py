@@ -1,8 +1,5 @@
 from django.conf.urls import patterns, include, url
-from django.conf import
-
-
- settings
+from django.conf import settings
 from django.conf.urls.static import static
 
 
@@ -16,7 +13,7 @@ urlpatterns = patterns('',
     url(r'^$', 'app_TFT.views.app',name='app'), 
     
     # course page 
-    url(r'^course/(?P<id>\d+)$', 'app_TFT.views.course', name='viewprofile'),
+    url(r'^course/(?P<id>\d+)$', 'app_TFT.views.course', name='course'),
 
 
     # login/logout
