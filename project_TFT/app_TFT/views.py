@@ -1,13 +1,12 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
-
-
 
 def home(request):
     # home page 
-    courses=['我们的课程','我们的特色'，'我们的团队']
-    
-    context={'courses':courses,
-    }
+    courses=['课程']
+    context={}
+
     return render(request, "index.html", context)
 
 
@@ -22,10 +21,7 @@ def course(request,id):
     context={}
     if id==1:
         context={}
-    else if id==2:
-        context={}
-    else if id==3:
-        context={}
-        
+    if id==2:
+        context={}    
     return render(request,"course.html",context)
     
