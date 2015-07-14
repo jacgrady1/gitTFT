@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b49b3a-75b9-4de1-9f9e-08f703c1791d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_TFT/templates/temp_home.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app_TFT/static/img/sliders/revolution/bg16.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app_TFT/static/img/sliders/revolution/bg2.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app_TFT/static/img/sliders/revolution/bg3.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app_TFT/static/img/sliders/revolution/bg3~.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/templates/base.html" afterPath="$PROJECT_DIR$/app_TFT/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/templates/index.html" afterPath="$PROJECT_DIR$/app_TFT/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_TFT/settings.py" afterPath="$PROJECT_DIR$/project_TFT/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/urls.py" afterPath="$PROJECT_DIR$/app_TFT/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_TFT/urls.py" afterPath="$PROJECT_DIR$/project_TFT/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/views.py" afterPath="$PROJECT_DIR$/app_TFT/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project_TFT.iws" />
@@ -47,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/app_TFT/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -69,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/app_TFT/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="11" />
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
                 <element signature="e#42#77#0" expanded="true" />
               </folding>
@@ -77,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_TFT/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37604457">
-              <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="58" column="88" selection-start-line="58" selection-start-column="88" selection-end-line="58" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -107,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_TFT/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333">
-              <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.20612814">
+              <caret line="61" column="62" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -147,15 +145,15 @@
       <list>
         <option value="$PROJECT_DIR$/app_TFT/admin.py" />
         <option value="$PROJECT_DIR$/app_TFT/models.py" />
-        <option value="$PROJECT_DIR$/app_TFT/views.py" />
         <option value="$PROJECT_DIR$/app_TFT/templates/temp_course.html" />
         <option value="$PROJECT_DIR$/app_TFT/templates/course.html" />
-        <option value="$PROJECT_DIR$/app_TFT/templates/base.html" />
         <option value="$PROJECT_DIR$/app_TFT/templates/temp_home.html" />
         <option value="$PROJECT_DIR$/project_TFT/settings.py" />
-        <option value="$PROJECT_DIR$/app_TFT/urls.py" />
         <option value="$PROJECT_DIR$/project_TFT/urls.py" />
         <option value="$PROJECT_DIR$/app_TFT/templates/index.html" />
+        <option value="$PROJECT_DIR$/app_TFT/urls.py" />
+        <option value="$PROJECT_DIR$/app_TFT/views.py" />
+        <option value="$PROJECT_DIR$/app_TFT/templates/base.html" />
       </list>
     </option>
   </component>
@@ -535,14 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_TFT/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
-          <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_TFT/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -567,26 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_TFT/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#42#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_TFT/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_TFT/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -605,8 +575,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_TFT/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37604457">
-          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="58" column="88" selection-start-line="58" selection-start-column="88" selection-end-line="58" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_TFT/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_TFT/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="e#42#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_TFT/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20612814">
+          <caret line="61" column="62" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
           <folding />
         </state>
       </provider>

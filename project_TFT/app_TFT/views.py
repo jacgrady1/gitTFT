@@ -16,7 +16,7 @@ def app(request):
     return render(request,"index.html",context)
 
 
-def course(request):
+def course(request,id):
     # course page 
     context={}
     return render(request,"course.html",context)
