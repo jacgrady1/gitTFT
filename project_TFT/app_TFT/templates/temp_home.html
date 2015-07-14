@@ -1,0 +1,392 @@
+{% extends "base.html" %}
+{% block title%}
+  <title>TFT</title>
+{% endblock %}
+
+
+    <!-- Intro Section -->
+{% block Intro %}
+    <section id="intro" class="intro-section">
+        <div class="fullscreenbanner-container">
+            <div class="fullscreenbanner">
+                <ul>
+                    {% for course in courses %}
+                    <!-- SLIDE 1 -->
+                    <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
+                        <!-- MAIN IMAGE -->
+                        <img src="/static/img/sliders/revolution/bg16.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption rs-caption-1 sft start"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="100"
+                            data-speed="800"
+                            data-start="2000"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">
+                            {{course.name}}
+                        </div>
+
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-2 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="200"
+                            data-speed="1000"
+                            data-start="3000"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            {{course.description}}<br>
+                            Thirsty For Thirty
+                        </div>
+
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-3 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="360"
+                            data-speed="800"
+                            data-start="3500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            <span class="page-scroll"><a href="{% url 'course' %}"  class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
+
+                        </div>
+                    </li>
+
+                    {% endfor %}
+
+                    <!-- SLIDE 2 -->
+                    <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
+                        <!-- MAIN IMAGE -->
+                        <img src="/static/img/sliders/revolution/bg2.jpg" alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption rs-caption-1 sft start"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="100"
+                            data-speed="800"
+                            data-start="1500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">
+                            Speakup月票直通车
+                        </div>
+
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-2 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="200"
+                            data-speed="1000"
+                            data-start="2500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            21天的口语训练计划<br>
+                            真正提高你的口语表达
+                        </div>
+
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-3 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="360"
+                            data-speed="800"
+                            data-start="3500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            <span class="page-scroll"><a href="course.html" class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
+
+                        </div>
+                    </li>
+
+                    <!-- SLIDE 3 -->
+                    <li data-transition="slideup" data-slotamount="5" data-masterspeed="700"  data-title="Slide 3">
+                        <!-- MAIN IMAGE -->
+                        <img src="/static/img/sliders/revolution/bg3.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption rs-caption-1 sft start"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="110"
+                            data-speed="800"
+                            data-start="1500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">
+                            Speakup留学文书修改
+                        </div>
+
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-2 sfb"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="210"
+                            data-speed="800"
+                            data-start="2500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            让最正确的人帮助你写出完美文书<br>
+                            用最正确的方式打造独特的你
+                        </div>
+
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-3 sfb"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="370"
+                            data-speed="800"
+                            data-start="3500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            <span class="page-scroll"><a href="course.html" class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom"></div>
+                <div class="tp-dottedoverlay twoxtwo"></div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+    <!-- End Intro Section -->
+
+        <!-- Services Section -->
+{% block Services %}
+<section id="services">
+        <div class="container content-lg">
+            <div class="title-v1">
+                <h2>我们的课程</h2>
+                <!--<p>We do <strong>things</strong> differently company providing key digital services. <br>
+                Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>-->
+            </div>
+
+            <div class="row service-box-v1">
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-lightbulb-o"></i>
+                        <h2 class="heading-md"><a href="#">Speakup口语锻造小组</a></h2>
+                         <p>10天突破托福口语瓶颈</p>
+                        <!-- <ul class="list-unstyled">
+                            <li>10天突破托福口语瓶颈</li>
+                        </ul>  -->
+                        <!-- <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine. Fusce dapibus</p> -->
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-present"></i>
+                        <h2 class="heading-sm"><a href="#">Speakup月票直通车</a></h2>
+                        <p>21天口语习惯养成</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-rocket"></i>
+                        <h2 class="heading-sm"><a href="#">Speakup留学文书修改</a></h2>
+                        <p>用最好的文字表达最好的自己</p>
+                        <!-- <ul class="list-unstyled">
+                            <li>Google AdSense</li>
+                            <li>Social Media</li>
+                            <li>Display Advertising</li>
+                            <li>App &amp; Icon Design</li>
+                            <li>Analysis &amp; Consulting</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax-twitter parallaxBg">
+            <div class="container parallax-twitter-in">
+                <div class="margin-bottom-30">
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <ul class="list-unstyled owl-twitter-v1">
+                            <li class="item">
+                                <p>半个月的学习托福口语8分，拿下offer剑桥phd。<p>
+                                <span>北京大学 孙大韪</a></span>
+                            </li>
+                            <li class="item">
+                                <p>"Pre的第一天背诵了北京的胡同简直是我这一辈子背诵得最美丽的英文"<p>
+                                <span>吴庆帆</a></span>
+                            </li>
+                            <li class="item">
+                                <p>"在小组我爱上真正优美的英文"<p>
+                                <span>周颖榛</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+{% endblock %}
+    <!-- End Services Section -->
+
+
+
+{% block Features %}
+    <!--  Features Section -->
+    <section id="about" class="about-section section-first">
+        <div class="block-v1">
+            <div class="container">
+                <div class="row content-boxes-v3">
+                    <div class="title-v1">
+                        <h1>我们的特色</h1>
+                    </div>
+                    <div class="col-md-6 md-margin-bottom-30">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">满分团队</h2>
+                            <p class="character">SpeakHub团队核心成员来自耶鲁牛津卡耐基梅隆等海外名校，熟知从托福考试到留学申请的各个环节。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 md-margin-bottom-30">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">专属工具</h2>
+                            <p class="character">SpeakHub团队为学员开发最高效的学习工具，甄选最地道学习素材，为学员打造高效学习环境。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 md-margin-bottom-30">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">独特体验</h2>
+                            <p class="character">SpeakHub培训项目采用严苛的淘汰机制，保证最高效的交流和学习效果，一鼓作气，短时间突破口语学习的瓶颈。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 md-margin-bottom-30">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-bolt"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">学员反馈</h2>
+                            <p class="character">Speakup在两年时间内已经培训超过千名学员，收到许多让我们欣喜和感动的反馈。</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--  End of Features Section -->
+{% endblock %}
+
+  {% block Team %}
+     <!--  Team Section -->
+    <section id="team" class="about-section section-first">
+
+        <div class="team-v1 bg-grey content-lg">
+            <div class="container">
+                <div class="title-v1">
+                    <h2>我们的团队</h2>
+                </div>
+
+                <ul class="list-unstyled row">
+                    <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
+                        <div class="team-img">
+                            <img class="img-responsive" src="/static/img/team/img1-md.jpg" alt="">
+                            <!-- <ul>
+                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+                            </ul> -->
+                        </div>
+                        <h3>刘功勋</h3>
+                        <h4>/ Lecturer</h4>
+                        <p>卡内基梅隆大学电子计算机系硕士 曾任北京新东方托福口语教师 托福口语满分 爱好打码 讲课 致力于利用一切技术手段改善教育体验</p>
+                    </li>
+                    <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
+                        <div class="team-img">
+                            <img class="img-responsive" src="/static/img/team/img2-md.jpg" alt="">
+
+                        </div>
+                        <h3>王祎婷</h3>
+                        <h4>/ Lead Coach</h4>
+                        <p>牛津大学药理学硕士 多伦多大学法医生物双学位 爱好讲课水粉画 烧的一手好菜 自制煎饼果子小意思 </p>
+                    </li>
+                    <li class="col-sm-3 col-xs-6">
+                        <div class="team-img">
+                            <img class="img-responsive" src="/static/img/team/img3-md.jpg" alt="">
+
+                        </div>
+                        <h3>方堃杨</h3>
+                        <h4>/ Lead Coach</h4>
+                        <p>耶鲁大学人类学硕士 某超大型对外事业单位工作 喜欢钢琴和欢喜（一直超级萌的小泰迪) </p>
+                    </li>
+                    <li class="col-sm-3 col-xs-6">
+                        <div class="team-img">
+                            <img class="img-responsive" src="/static/img/team/img5-md.jpg" alt="">
+
+                        </div>
+                        <h3>Claire Paduano</h3>
+                        <h4>/ Coach</h4>
+                        <p>康奈尔大学生物学本科 匹兹堡大学医学院硕士 热衷于语言习得和培训 急需提高自己的中文水平</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+       <!--  <div class="parallax-counter parallaxBg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counters">
+                            <span class="counter">10629</span>
+                            <h4>Users</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counters">
+                            <span class="counter">277</span>
+                            <h4>Projects</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counters">
+                            <span class="counter">78</span>
+                            <h4>Team Members</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counters">
+                            <span class="counter">109</span>
+                            <h4>Awards</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    -->
+    </section>
+{% endblock %}
+    <!--  About Section -->
+
+
