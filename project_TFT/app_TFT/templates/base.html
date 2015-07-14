@@ -70,20 +70,20 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="menu-container">
                     <ul class="nav navbar-nav">
                         <li class="page-scroll home">
-                            <a href="#body"></a>
+                            <a href="{% url 'home' %}#body"></a>
                         </li>
 
                         <li class="page-scroll">
-                            <a href="#services">我们的课程</a>
+                            <a href="{% url 'home' %}#services">我们的课程</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#about">我们的特色</a>
+                            <a href="{% url 'home' %}#about">我们的特色</a>
                         </li>
                        <!--  <li class="page-scroll">
                             <a href="#news">我们的学员</a>
                         </li> -->
                         <li class="page-scroll">
-                            <a href="#team">我们的团队</a>
+                            <a href="{% url 'home' %}#team">我们的团队</a>
                         </li>
                         
                         <!--
