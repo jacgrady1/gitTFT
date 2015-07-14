@@ -1,11 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
-
+from models import *
 def home(request):
     # home page 
     courses=['课程']
-    context={}
+    courses = Course.objects.all()
+    context={'courses':courses}
     return render(request, "index.html", context)
 
 
