@@ -13,6 +13,14 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.CreateModel(
+            name='Question',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('content', models.CharField(max_length=300)),
+                ('answer', models.CharField(max_length=2000, blank=True)),
+            ],
+        ),
         migrations.AddField(
             model_name='course',
             name='brief',
@@ -21,7 +29,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='course',
             name='start_time',
-            field=models.TimeField(default=datetime.datetime(2015, 7, 15, 0, 21, 14, 75919, tzinfo=utc), blank=True),
+            field=models.TimeField(default=datetime.datetime(2015, 7, 15, 6, 31, 25, 650979, tzinfo=utc), blank=True),
             preserve_default=False,
         ),
         migrations.AlterField(
@@ -38,5 +46,10 @@ class Migration(migrations.Migration):
             model_name='course',
             name='start_date',
             field=models.DateField(blank=True),
+        ),
+        migrations.AddField(
+            model_name='question',
+            name='course',
+            field=models.ForeignKey(to='app_TFT.Course'),
         ),
     ]

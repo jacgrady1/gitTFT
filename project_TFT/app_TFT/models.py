@@ -18,4 +18,11 @@ class Course(models.Model):
          return self.name
 
 
+class Question(models.Model):
+    content = models.CharField(max_length=300)
+    answer = models.CharField(max_length=2000,blank=True)
+    course = models.ForeignKey(Course)
+
+    def __unicode__(self):
+         return self.content
 
