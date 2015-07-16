@@ -26,3 +26,12 @@ class Question(models.Model):
     def __unicode__(self):
          return self.content
 
+class Teacher(models.Model):
+    name = models.CharField(max_length=100)
+    course = models.ManyToManyField(Course)
+    role = models.CharField(max_length=100)
+    description = models.CharField(max_length=1000)
+    picture = models.ImageField(upload_to='photos/teacher_photos',blank=True)
+
+    def __unicode__(self):
+        return self.name

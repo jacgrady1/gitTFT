@@ -193,46 +193,24 @@
                 </div>
 
                 <ul class="list-unstyled row">
+                    {% for teacher in teachers%}
                     <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
                         <div class="team-img">
-                            <img class="img-responsive" src="/static/img/team/img1-md.jpg" alt="">
+                            <img class="img-responsive" src="{{teacher.picture.url}}" alt="/static/img/team/img5-md.jpg">
                             <!-- <ul>
                                 <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
                             </ul> -->
+
                         </div>
-                        <h3>刘功勋</h3>
-                        <h4>/ Lecturer</h4>
-                        <p>卡内基梅隆大学电子计算机系硕士 曾任北京新东方托福口语教师 托福口语满分 爱好打码 讲课 致力于利用一切技术手段改善教育体验</p>
+
+                        <h3>{{teacher.name}}</h3>
+                        <h4>/ {{teacher.role}}</h4>
+                        <p>{{teacher.description}}</p>
                     </li>
-                    <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
-                        <div class="team-img">
-                            <img class="img-responsive" src="/static/img/team/img2-md.jpg" alt="">
-                            
-                        </div>
-                        <h3>王祎婷</h3>
-                        <h4>/ Lead Coach</h4>
-                        <p>牛津大学药理学硕士 多伦多大学法医生物双学位 爱好讲课水粉画 烧的一手好菜 自制煎饼果子小意思 </p>
-                    </li>
-                    <li class="col-sm-3 col-xs-6">
-                        <div class="team-img">
-                            <img class="img-responsive" src="/static/img/team/img3-md.jpg" alt="">
-                            
-                        </div>
-                        <h3>方堃杨</h3>
-                        <h4>/ Lead Coach</h4>
-                        <p>耶鲁大学人类学硕士 某超大型对外事业单位工作 喜欢钢琴和欢喜（一直超级萌的小泰迪) </p>
-                    </li>
-                    <li class="col-sm-3 col-xs-6">
-                        <div class="team-img">
-                            <img class="img-responsive" src="/static/img/team/img5-md.jpg" alt="">
-                            
-                        </div>
-                        <h3>Claire Paduano</h3>
-                        <h4>/ Coach</h4>
-                        <p>康奈尔大学生物学本科 匹兹堡大学医学院硕士 热衷于语言习得和培训 急需提高自己的中文水平</p>
-                    </li>
+                    {% endfor %}
+
                 </ul>                
             </div>
         </div>

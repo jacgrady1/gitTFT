@@ -6,7 +6,9 @@ def home(request):
     # home page 
     courses=['课程']
     courses = Course.objects.all()
-    context={'courses':courses}
+    teachers = Teacher.objects.all()
+    context={'courses':courses,
+             'teachers':teachers}
     return render(request, "index.html", context)
 
 
