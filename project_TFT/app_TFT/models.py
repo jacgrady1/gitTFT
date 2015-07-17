@@ -6,6 +6,7 @@ class Course(models.Model):
     #user = models.ForeignKey(User)
     id= models.IntegerField(primary_key=True)
     name = models.CharField(max_length=100)
+    alias = models.CharField(max_length=50)
     brief = models.CharField(max_length=200,blank=True)
     description = models.CharField(max_length=1000,blank=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -35,4 +36,14 @@ class Teacher(models.Model):
 
     def __unicode__(self):
         return self.name
+
+class Lecture(models.Model):
+    course = models.ForeignKey(Course)
+    num = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=100)
+
+class Chapter(models.Model):
+    lecture = models.ForeignKey(Lecture)
+    content = models.CharField(max_length=1000)
+
 
