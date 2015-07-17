@@ -42,8 +42,14 @@ class Lecture(models.Model):
     num = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=100)
 
+    def __unicode__(self):
+        return self.name
+
 class Chapter(models.Model):
     lecture = models.ForeignKey(Lecture)
     content = models.CharField(max_length=1000)
+
+    def __unicode__(self):
+        return self.content
 
 
