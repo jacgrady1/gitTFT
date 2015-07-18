@@ -57,10 +57,18 @@ var App = function () {
         });
     }
 
+    //Scan Bar code (Header)
+    function handleBarCode() {    
+        jQuery('.scan-btn').click(function() {
+            $('.barcode-img').toggle(500);
+        }); 
+    }
+
     return {
         init: function () {
             handleHeader();
             handleBootstrap();
+            handleBarCode();
         },
 
         initCounter: function () {
@@ -79,3 +87,6 @@ var App = function () {
     };
 
 }();
+
+
+

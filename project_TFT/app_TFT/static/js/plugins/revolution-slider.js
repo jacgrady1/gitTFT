@@ -34,7 +34,7 @@ var CourseRevolutionSlider = function () {
 	        jQuery(document).ready(function() {
 	           revapi = jQuery('.fullscreenbanner').revolution(
 	            {
-	                delay:15000,
+	                delay:0,
 	                startwidth:1170,
 	                startheight:500,
 	                hideThumbs:10,

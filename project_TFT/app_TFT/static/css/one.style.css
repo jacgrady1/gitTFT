@@ -152,6 +152,12 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.one-page-header .navbar-nav > li > img {
+    max-height:10%;
+    max-width:10%;
+}
+
+
 .one-page-header .navbar-nav > li > a:before {
 	left: -3px;
 	z-index: 2;
