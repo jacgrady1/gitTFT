@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b49b3a-75b9-4de1-9f9e-08f703c1791d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/templates/base.html" afterPath="$PROJECT_DIR$/app_TFT/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/templates/course.html" afterPath="$PROJECT_DIR$/app_TFT/templates/course.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/templates/index.html" afterPath="$PROJECT_DIR$/app_TFT/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/static/css/one.style.css" afterPath="$PROJECT_DIR$/app_TFT/static/css/one.style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_TFT/static/js/plugins/revolution-slider.js" afterPath="$PROJECT_DIR$/app_TFT/static/js/plugins/revolution-slider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project_TFT.iws" />
@@ -58,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_TFT/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6406685">
-              <caret line="236" column="23" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="23" />
+            <state vertical-scroll-proportion="-9.958333">
+              <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -71,12 +67,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="course.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_TFT/templates/course.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.5294118">
-              <caret line="165" column="45" selection-start-line="165" selection-start-column="45" selection-end-line="165" selection-end-column="45" />
-              <folding />
+            <state vertical-scroll-proportion="0.5933735">
+              <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +121,8 @@
         <option value="$PROJECT_DIR$/app_TFT/models.py" />
         <option value="$PROJECT_DIR$/app_TFT/views.py" />
         <option value="$PROJECT_DIR$/app_TFT/templates/temp_course.html" />
-        <option value="$PROJECT_DIR$/app_TFT/templates/course.html" />
         <option value="$PROJECT_DIR$/app_TFT/templates/index.html" />
+        <option value="$PROJECT_DIR$/app_TFT/templates/course.html" />
       </list>
     </option>
   </component>
@@ -655,21 +653,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_TFT/templates/course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5294118">
-          <caret line="165" column="45" selection-start-line="165" selection-start-column="45" selection-end-line="165" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_TFT/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6406685">
-          <caret line="236" column="23" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="23" />
+        <state vertical-scroll-proportion="-9.958333">
+          <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_TFT/templates/course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5933735">
+          <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
