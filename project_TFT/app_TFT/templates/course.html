@@ -8,15 +8,25 @@
     <link rel="stylesheet" href="/static/css/footers/footer-default.css">
 {% endblock %}
 {% block Intro%}
+<<<<<<< HEAD
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
+=======
+ <!-- Intro Section -->
+    <section id="intro" class="course-intro-section">
+>>>>>>> e96462e031e55169c1871482b0d3fc00a7b9f710
         <div class="fullscreenbanner-container">
             <div class="fullscreenbanner">
                 <ul>
                     <!-- SLIDE 1 -->
                     <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
                         <!-- MAIN IMAGE -->
+<<<<<<< HEAD
                         <img src="/static/img/sliders/revolution/bg16.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+=======
+                        <img src="{{course.picture.url}}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+>>>>>>> e96462e031e55169c1871482b0d3fc00a7b9f710
                         <!-- LAYERS -->
                         <div class="tp-caption rs-caption-1 sft start"
                             data-x="center"
@@ -208,9 +218,34 @@
                     <!-- End Tags v2 -->
                 </div>
                 <!-- End Blog Sidebar -->
+<<<<<<< HEAD
                 
             </div>
             <!-- End FAQ Content -->
             </div><!--/container-->
         {% endblock %}
         <!--=== End FAQ Page ===-->
+=======
+
+            
+
+
+
+        </div>        
+        <!-- End FAQ Content -->
+    </div><!--/container-->     
+
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/jquery/jquery-migrate.min.js"></script>    
+    <script type="text/javascript" src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="/static/js/plugins/revolution-slider.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            CourseRevolutionSlider.initHalfRSfullScreen();
+        });
+    </script>
+{% endblock %}
+    <!--=== End FAQ Page ===-->
+>>>>>>> e96462e031e55169c1871482b0d3fc00a7b9f710
