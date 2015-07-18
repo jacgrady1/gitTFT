@@ -1,253 +1,224 @@
 {% extends "base.html" %}
 {% block title%}
-  <title>TFT</title>
+    <title>TFT</title>
 {% endblock %}
-
-
-    <!-- Intro Section -->
+<!-- Intro Section -->
 {% block Intro %}
     <section id="intro" class="intro-section">
         <div class="fullscreenbanner-container">
             <div class="fullscreenbanner">
                 <ul>
                     {% for course in courses %}
-                    <!-- SLIDE 1 -->
-                    <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="更多课程">
-                        <!-- MAIN IMAGE -->
-                        <img src="{{course.picture.url}}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
-                        <!-- LAYERS -->
-                        <div class="tp-caption rs-caption-1 sft start"
-                            data-x="center"
-                            data-hoffset="0"
-                            data-y="100"
-                            data-speed="800"
-                            data-start="2000"
-                            data-easing="Back.easeInOut"
-                            data-endspeed="300">
-                            {{course.name}}
-                        </div>
-
-                        <!-- LAYER -->
-                        <div class="tp-caption rs-caption-2 sft"
-                            data-x="center"
-                            data-hoffset="0"
-                            data-y="200"
-                            data-speed="1000"
-                            data-start="3000"
-                            data-easing="Power4.easeOut"
-                            data-endspeed="300"
-                            data-endeasing="Power1.easeIn"
-                            data-captionhidden="off"
-                            style="z-index: 6">
-                            {{course.description}}<br>
-                            Thirsty For Thirty
-                        </div>
-
-                        <!-- LAYER -->
-                        <div class="tp-caption rs-caption-3 sft"
-                            data-x="center"
-                            data-hoffset="0"
-                            data-y="360"
-                            data-speed="800"
-                            data-start="3500"
-                            data-easing="Power4.easeOut"
-                            data-endspeed="300"
-                            data-endeasing="Power1.easeIn"
-                            data-captionhidden="off"
-                            style="z-index: 6">
-                            <span class="page-scroll"><a href="{% url 'course' course.id %}"  class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
-                            
-                        </div>
-                    </li>
-
+                        <!-- SLIDE 1 -->
+                        <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="更多课程">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{course.picture.url}}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+                            <div class="tp-caption rs-caption-1 sft start"
+                                data-x="center"
+                                data-hoffset="0"
+                                data-y="100"
+                                data-speed="800"
+                                data-start="2000"
+                                data-easing="Back.easeInOut"
+                                data-endspeed="300">
+                                {{course.name}}
+                            </div>
+                            <!-- LAYER -->
+                            <div class="tp-caption rs-caption-2 sft"
+                                data-x="center"
+                                data-hoffset="0"
+                                data-y="200"
+                                data-speed="1000"
+                                data-start="3000"
+                                data-easing="Power4.easeOut"
+                                data-endspeed="300"
+                                data-endeasing="Power1.easeIn"
+                                data-captionhidden="off"
+                                style="z-index: 6">
+                                {{course.description}}<br>
+                                Thirsty For Thirty
+                            </div>
+                            <!-- LAYER -->
+                            <div class="tp-caption rs-caption-3 sft"
+                                data-x="center"
+                                data-hoffset="0"
+                                data-y="360"
+                                data-speed="800"
+                                data-start="3500"
+                                data-easing="Power4.easeOut"
+                                data-endspeed="300"
+                                data-endeasing="Power1.easeIn"
+                                data-captionhidden="off"
+                                style="z-index: 6">
+                                <span class="page-scroll"><a href="{% url 'course' course.id %}"  class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
+                                
+                            </div>
+                        </li>
                     {% endfor %}
-
-
                 </ul>
                 <div class="tp-bannertimer tp-bottom"></div>
                 <div class="tp-dottedoverlay twoxtwo"></div>
             </div>
         </div>
     </section>
-
 {% endblock %}
-    <!-- End Intro Section -->
-
-        <!-- Services Section -->
+<!-- End Intro Section -->
+<!-- Services Section -->
 {% block Services %}
-
-<section id="services">
+    <section id="services">
         <div class="container content-lg">
             <div class="title-v1">
                 <h2>我们的课程</h2>
-                <!--<p>We do <strong>things</strong> differently company providing key digital services. <br> 
-                Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>-->                
-            </div>            
-    
+                <!--<p>We do <strong>things</strong> differently company providing key digital services. <br>
+                Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>-->
+            </div>
+            
             <div class="row service-box-v1">
-
                 {% for course in courses %}
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-block service-block-default">
-                        <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-lightbulb-o"></i>
-                        <h2 class="heading-md"><a href="{% url 'course' course.id %}">{{course.name}}</a></h2>
-                         <p>{{course.brief}}</p>
-
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-block service-block-default">
+                            <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-lightbulb-o"></i>
+                            <h2 class="heading-md"><a href="{% url 'course' course.id %}">{{course.name}}</a></h2>
+                            <p>{{course.brief}}</p>
+                        </div>
                     </div>
-                </div>
                 {% endfor %}
-
             </div>
         </div>
-
         <div class="parallax-twitter parallaxBg">
             <div class="container parallax-twitter-in">
                 <div class="margin-bottom-30">
-                   
+                    
                 </div>
-
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <ul class="list-unstyled owl-twitter-v1">
                             <li class="item">
                                 <p>半个月的学习托福口语8分，拿下offer剑桥phd。<p>
-                                <span>北京大学 孙大韪</a></span>
-                            </li>
-                            <li class="item">
-                                <p>"Pre的第一天背诵了北京的胡同简直是我这一辈子背诵得最美丽的英文"<p>
-                                <span>吴庆帆</a></span>
-                            </li>
-                            <li class="item">
-                                <p>"在小组我爱上真正优美的英文"<p>
-                                <span>周颖榛</a></span>
-                            </li>
-                        </ul>                    
+                                    <span>北京大学 孙大韪</a></span>
+                                </li>
+                                <li class="item">
+                                    <p>"Pre的第一天背诵了北京的胡同简直是我这一辈子背诵得最美丽的英文"<p>
+                                        <span>吴庆帆</a></span>
+                                    </li>
+                                    <li class="item">
+                                        <p>"在小组我爱上真正优美的英文"<p>
+                                            <span>周颖榛</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </section>
+            {% endblock %}
+            <!-- End Services Section -->
+            {% block Features %}
+                <!--  Features Section -->
+                <section id="about" class="about-section section-first">
+                    <div class="block-v1">
+                        <div class="container">
+                            <div class="row content-boxes-v3">
+                                <div class="title-v1">
+                                    <h1>我们的特色</h1>
+                                </div>
+                                <div class="col-md-6 md-margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
+                                    <div class="content-boxes-in-v3">
+                                        <h2 class="heading-sm">满分团队</h2>
+                                        <p class="character">SpeakHub团队核心成员来自耶鲁牛津卡耐基梅隆等海外名校，熟知从托福考试到留学申请的各个环节。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 md-margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
+                                    <div class="content-boxes-in-v3">
+                                        <h2 class="heading-sm">专属工具</h2>
+                                        <p class="character">SpeakHub团队为学员开发最高效的学习工具，甄选最地道学习素材，为学员打造高效学习环境。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 md-margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
+                                    <div class="content-boxes-in-v3">
+                                        <h2 class="heading-sm">独特体验</h2>
+                                        <p class="character">SpeakHub培训项目采用严苛的淘汰机制，保证最高效的交流和学习效果，一鼓作气，短时间突破口语学习的瓶颈。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 md-margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-bg-dark fa fa-bolt"></i>
+                                    <div class="content-boxes-in-v3">
+                                        <h2 class="heading-sm">学员反馈</h2>
+                                        <p class="character">Speakup在两年时间内已经培训超过千名学员，收到许多让我们欣喜和感动的反馈。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div> 
-       
-        
-                         
-    </section>
-{% endblock %}
-    <!-- End Services Section -->
-
-
-
-{% block Features %}
-    <!--  Features Section -->
-    <section id="about" class="about-section section-first">
-        <div class="block-v1">
-            <div class="container">
-                <div class="row content-boxes-v3">
-                    <div class="title-v1">
-                        <h1>我们的特色</h1>
-                    </div>
-                    <div class="col-md-6 md-margin-bottom-30">
-                        <i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">满分团队</h2>
-                            <p class="character">SpeakHub团队核心成员来自耶鲁牛津卡耐基梅隆等海外名校，熟知从托福考试到留学申请的各个环节。</p>
+            </section>
+            <!--  End of Features Section -->
+        {% endblock %}
+        {% block Team %}
+            <!--  Team Section -->
+            <section id="team" class="about-section section-first">
+                
+                <div class="team-v1 bg-grey content-lg">
+                    <div class="container">
+                        <div class="title-v1">
+                            <h2>我们的团队</h2>
                         </div>
+                        <ul class="list-unstyled row">
+                            {% for teacher in teachers%}
+                                <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
+                                    <div class="team-img">
+                                        <img class="img-responsive" src="{{teacher.picture.url}}" alt="/static/img/team/img5-md.jpg">
+                                        <!-- <ul>
+                                            <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+                                        </ul> -->
+                                    </div>
+                                    <h3>{{teacher.name}}</h3>
+                                    <h4>/ {{teacher.role}}</h4>
+                                    <p>{{teacher.description}}</p>
+                                </li>
+                            {% endfor %}
+                        </ul>
                     </div>
-                    <div class="col-md-6 md-margin-bottom-30">
-                        <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">专属工具</h2>
-                            <p class="character">SpeakHub团队为学员开发最高效的学习工具，甄选最地道学习素材，为学员打造高效学习环境。</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 md-margin-bottom-30">
-                        <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">独特体验</h2>
-                            <p class="character">SpeakHub培训项目采用严苛的淘汰机制，保证最高效的交流和学习效果，一鼓作气，短时间突破口语学习的瓶颈。</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 md-margin-bottom-30">
-                        <i class="icon-custom rounded-x icon-bg-dark fa fa-bolt"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">学员反馈</h2>
-                            <p class="character">Speakup在两年时间内已经培训超过千名学员，收到许多让我们欣喜和感动的反馈。</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>                
-            </div>
-        </div>
-        </section>
-        <!--  End of Features Section -->
-{% endblock %}
-
-  {% block Team %}
-     <!--  Team Section -->
-    <section id="team" class="about-section section-first">
-        
-        <div class="team-v1 bg-grey content-lg">
-            <div class="container">
-                <div class="title-v1">
-                    <h2>我们的团队</h2>
                 </div>
-
-                <ul class="list-unstyled row">
-                    {% for teacher in teachers%}
-                    <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
-                        <div class="team-img">
-                            <img class="img-responsive" src="{{teacher.picture.url}}" alt="/static/img/team/img5-md.jpg">
-                            <!-- <ul>
-                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
-                            </ul> -->
-
+                <!--  <div class="parallax-counter parallaxBg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="counters">
+                                    <span class="counter">10629</span>
+                                    <h4>Users</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="counters">
+                                    <span class="counter">277</span>
+                                    <h4>Projects</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="counters">
+                                    <span class="counter">78</span>
+                                    <h4>Team Members</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="counters">
+                                    <span class="counter">109</span>
+                                    <h4>Awards</h4>
+                                </div>
+                            </div>
                         </div>
-
-                        <h3>{{teacher.name}}</h3>
-                        <h4>/ {{teacher.role}}</h4>
-                        <p>{{teacher.description}}</p>
-                    </li>
-                    {% endfor %}
-
-                </ul>                
-            </div>
-        </div>
-
-
-       <!--  <div class="parallax-counter parallaxBg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="counters">
-                            <span class="counter">10629</span>   
-                            <h4>Users</h4>
-                        </div>    
                     </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="counters">
-                            <span class="counter">277</span> 
-                            <h4>Projects</h4>
-                        </div>    
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="counters">
-                            <span class="counter">78</span>
-                            <h4>Team Members</h4>
-                        </div>    
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="counters">
-                            <span class="counter">109</span>
-                            <h4>Awards</h4>
-                        </div>    
-                    </div>
-                </div>            
-            </div>
-        </div>    -->     
-    </section>
-{% endblock %}
-    <!--  About Section -->
-
-
+                </div>    -->
+            </section>
+        {% endblock %}
+        <!--  About Section -->

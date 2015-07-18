@@ -1,19 +1,14 @@
 {% extends "base.html" %}
 {% block title%}
-  <title>TFT</title>
+    <title>TFT</title>
 {% endblock %}
-
-
-    {% block css %}
+{% block css %}
     <!-- CSS Header and Footer -->
     <link rel="stylesheet" href="/static/css/headers/header-default.css">
     <link rel="stylesheet" href="/static/css/footers/footer-default.css">
-
-    {% endblock %}
-
-
+{% endblock %}
 {% block Intro%}
- <!-- Intro Section -->
+    <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="fullscreenbanner-container">
             <div class="fullscreenbanner">
@@ -22,7 +17,6 @@
                     <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
                         <!-- MAIN IMAGE -->
                         <img src="/static/img/sliders/revolution/bg16.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
                         <!-- LAYERS -->
                         <div class="tp-caption rs-caption-1 sft start"
                             data-x="center"
@@ -34,7 +28,6 @@
                             data-endspeed="300">
                             {{course.name}}
                         </div>
-
                         <!-- LAYER -->
                         <div class="tp-caption rs-caption-2 sft"
                             data-x="center"
@@ -51,8 +44,7 @@
                             Thirsty For Thirty
                         </div>
                     </li>
-
-                                       
+                    
                 </ul>
                 <div class="tp-bannertimer tp-bottom"></div>
                 <div class="tp-dottedoverlay twoxtwo"></div>
@@ -60,14 +52,12 @@
         </div>
     </section>
     <!-- End Intro Section -->
- 
+    
 {% endblock%}
-
 {% block Services %}
- <!--=== FAQ Page ===-->
+    <!--=== FAQ Page ===-->
     <div class="container content faq-page">
         
-
         <!-- FAQ Content -->
         <div class="row">
             <!-- Begin Tab v1 -->
@@ -78,8 +68,7 @@
                         <li><a data-toggle="tab" href="#profile">教师介绍</a></li>
                         <li><a data-toggle="tab" href="#messages">常见问题</a></li>
                         <li><a data-toggle="tab" href="#settings">价格方案</a></li>
-
-                    </ul>        
+                    </ul>
                     <div class="tab-content">
                         <!-- Tab Content 1 -->
                         <div id="home" class="tab-pane fade in active">
@@ -87,115 +76,119 @@
                                 
                                 <div class="panel panel-default">
                                     <div class="tag-box tag-box-v3">
-                                            <div class="heading heading-v1">
-                                                <h2>3 Double Line Deviders</h2>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
-                                            </div>
-
-                                            <hr class="devider devider-db">
-
-                                            <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">D</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
-
-                                            <hr class="devider devider-db-dotted">
-
-                                            <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">E</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
-
-                                            <hr class="devider devider-db-dashed">
-
-                                            <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">F</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                                        <div class="heading heading-v1">
+                                            <h2>3 Double Line Deviders</h2>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
                                         </div>
+                                        <hr class="devider devider-db">
+                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">D</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                                        <hr class="devider devider-db-dotted">
+                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">E</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                                        <hr class="devider devider-db-dashed">
+                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">F</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                                    </div>
                                     <!--<div class="panel-heading">-->
-                                        <!--<h4 class="panel-title">-->
-                                                <!--{{course.name}}-->
-                                        <!--</h4>-->
+                                    <!--<h4 class="panel-title">-->
+                                    <!--{{course.name}}-->
+                                    <!--</h4>-->
                                     <!--</div>-->
                                     <!--<div class="panel-body">-->
-                                            <!--{{course.description}}-->
+                                    <!--{{course.description}}-->
                                     <!--</div>-->
-
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                         <!-- End Tab Content 1 -->
-
                         <!-- Tab Content 2 -->
                         <div id="profile" class="tab-pane fade">
                             <div id="accordion-v2" class="panel-group acc-v1">
-                                <div class="panel panel-default">
-
-                                    <div class="panel-collapse collapse in" id="collapse-v2-One">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
-                                                    <ul class="list-unstyled">
-                                                        <li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida at eget metus..</li>
-                                                        <li><i class="fa fa-check color-green"></i> Fusce dapibus, tellus ac cursus comodo egetine..</li>
-                                                        <li><i class="fa fa-check color-green"></i> Food truck quinoa nesciunt laborum eiusmod runch..</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive" src="/static/img/team/img1-sm.jpg" alt="">
+                                {% for lecturer in lecturers%}
+                                    <div class="panel panel-default">
+                                        <div class="panel-collapse collapse in" id="collapse-v2-One">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <img class="img-responsive" src="{{lecturer.picture.url}}" alt="">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h2>{{lecturer.name}}</h2>
+                                                        <ul class="list-unstyled">
+                                                            <li><i class="fa fa-check color-green"></i> {{lecturer.description}}</li>
+                                                            <li><i class="fa fa-check color-green"></i> Fusce dapibus, tellus ac cursus comodo egetine..</li>
+                                                            <li><i class="fa fa-check color-green"></i> Food truck quinoa nesciunt laborum eiusmod runch..</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
-                                </div>
-                            </div>    
+                                {% endfor%}
+                                {% for coach in coaches%}
+                                    <div class="panel panel-default">
+                                        <div class="panel-collapse collapse in" id="collapse-v2-One">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <img class="img-responsive" src="{{coach.picture.url}}" alt="">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h2>{{coach.name}}</h2>
+                                                        <ul class="list-unstyled">
+                                                            <li><i class="fa fa-check color-green"></i> {{coach.description}}</li>
+                                                            <li><i class="fa fa-check color-green"></i> Fusce dapibus, tellus ac cursus comodo egetine..</li>
+                                                            <li><i class="fa fa-check color-green"></i> Food truck quinoa nesciunt laborum eiusmod runch..</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor%}
+                            </div>
                         </div>
                         <!-- Tab Content 2 -->
                         
                         <!-- Tab Content 3 -->
-                        {% for question in questions%}
                         <div id="messages" class="tab-pane fade">
                             <div id="accordion-v3" class="panel-group acc-v1">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a href="#collapse-v3-One" data-parent="#accordion-v3" data-toggle="collapse" class="accordion-toggle">
+                                {% for question in questions%}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                            <a href="#{{question.content}}" data-parent="#accordion-v3" data-toggle="collapse" class="accordion-toggle">
                                                 {{question.content}}
                                             </a>
-                                        </h4>
-                                    </div>
-                                    <div class="panel-collapse collapse in" id="collapse-v3-One">
-                                        <div class="panel-body">
-                                            {{question.answer}}
+                                            </h4>
+                                        </div>
+                                        <div class="panel-collapse collapse" id="{{question.content}}">
+                                            <div class="panel-body">
+                                                {{question.answer}}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>    
+                                {% endfor %}
+                            </div>
                         </div>
-                        {% endfor %}
                         <!-- Tab Content 3 -->
                         
-                        <!-- Tab Content 4 -->                        
+                        <!-- Tab Content 4 -->
                         <div id="settings" class="tab-pane fade">
                             <div id="accordion-v4" class="panel-group acc-v1">
                                 <div class="panel panel-default">
-
                                     <div class="panel-collapse collapse in" id="collapse-v4-One">
                                         <div class="panel-body">
                                             个人报名：1199元<br>多人报名：999元 <br>优惠：同时报名小组和月票计划：1500元
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                        <!-- Tab Content 4 -->   
-
+                        <!-- Tab Content 4 -->
                     </div>
                 </div>
-            </div><!--/col-md-6-->
-            <!--End Tab v1-->
-
-
-
-
-
-
-            <!-- Blog Sidebar -->
+                </div><!--/col-md-6-->
+                <!--End Tab v1-->
+                <!-- Blog Sidebar -->
                 <div class="col-md-3">
                     <div class="headline-v2"><h2>最新课程</h2></div>
                     <!-- Trending -->
@@ -204,10 +197,8 @@
                             <h3><a href="#">口语第22期课程正在招生</a></h3>
                             <small>{{course.start_date}} / {{course.start_time}}</small>
                         </li>
-
                     </ul>
                     <!-- End Trending -->
-
                     <div class="headline-v2"><h2>话题</h2></div>
                     <!-- Tags v2 -->
                     <ul class="list-inline tags-v2 margin-bottom-50">
@@ -215,17 +206,11 @@
                         <li><a href="#">#口语好是怎样一番体验#</a></li>
                     </ul>
                     <!-- End Tags v2 -->
-
-
                 </div>
                 <!-- End Blog Sidebar -->
-
-            
-
-
-
-        </div>        
-        <!-- End FAQ Content -->
-    </div><!--/container-->     
-{% endblock %}
-    <!--=== End FAQ Page ===-->
+                
+            </div>
+            <!-- End FAQ Content -->
+            </div><!--/container-->
+        {% endblock %}
+        <!--=== End FAQ Page ===-->
