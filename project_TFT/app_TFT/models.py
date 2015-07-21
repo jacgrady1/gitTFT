@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.core.validators import URLValidator
 # Create your models here.
 
 class Course(models.Model):
@@ -53,5 +53,11 @@ class Chapter(models.Model):
         return self.content
 
 
+class Hashtag(models.Model):
+    course = models.ForeignKey(Course)
+    name = models.CharField(max_length=100)
+    url = models.TextField(validators=[URLValidator()])
 
+    def __unicode__(self):
+        return self.url
 
