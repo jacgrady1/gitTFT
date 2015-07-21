@@ -14,6 +14,8 @@ class Course(models.Model):
     start_date = models.DateField(blank=True)
     start_time = models.TimeField(blank=True)
     price = models.FloatField(blank=True)
+    group_price = models.FloatField(blank=True)
+    promotion_info= models.CharField(blank=True,max_length=200)
 
     def __unicode__(self):
          return self.name
