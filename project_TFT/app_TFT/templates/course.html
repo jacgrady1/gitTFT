@@ -80,16 +80,31 @@
                                             <h2>{{course.name}}</h2>
                                             <p>{{course.description}}</p>
                                         </div>
+
+                                        <div class="row margin-bottom-40">
+
+
                                         {% for lecture in lectures%}
+
                                         <hr class="devider devider-db-dotted">
-                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">{{lecture.num}}</span>{{lecture.name}}</p>
-                                        <ul class="list-unstyled">
-                                            {% for chapter in lecture.chapter_set.all %}
-                                            <li><i class="fa fa-check color-green"></i> {{chapter.content}}</li>
-                                            {% endfor %}
-                                        </ul>
+                                            <div class="row">
+                                                    <div class="col-md-2 col-md-offset-1">
+                                                         <p><span class="dropcap dropcap-bg rounded bg-color-dark">第{{lecture.num}}课</span></p>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h2>{{lecture.name}}</h2>
+
+                                                        <ul class="list-unstyled">
+                                                            {% for chapter in lecture.chapter_set.all %}
+                                                            <li><i class="fa fa-check color-green"></i> {{chapter.content}}</li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                         {% endfor %}
-                                    </div>
+                                         </div>
+                                        </div>
+
 
                                 </div>
                             </div>
@@ -190,7 +205,7 @@
                     <!-- Trending -->
                     <ul class="list-unstyled blog-trending margin-bottom-50">
                         <li>
-                            <h3><a href="#">口语第22期课程正在招生</a></h3>
+                            <h3><a href="#">口语第{{course.alias}}期课程正在招生</a></h3>
                             <small>{{course.start_date}} / {{course.start_time}}</small>
                         </li>
                     </ul>
