@@ -88,13 +88,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         
                         <!-- Barcode Block -->
                         <li class="page-scroll">
-                            <a class="scan-btn">扫一扫</a>
-                        </li>
-
-                        <li class="page-scroll">
-                        <div class="barcode-img" style="display:none;">
-                            <img src="/static/img/barcode/barcode.jpg">
-                        </div>
+                            <a href="{% url 'home' %}#barcode">扫一扫</a>
                         </li>
                         <!-- End Barcode Block -->
                         <!--
@@ -134,8 +128,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <!-- Team Section -->
     {% block Team %}
     {% endblock %}
-
     <!--  End of Team Section -->
+
+    <!-- Barcode Section -->
+    {% block Barcode %}
+    {% endblock %}
+
+    <!--  End of Barcode Section -->
 
         <div class="copyright-section">
             <p>2014 &copy; All Rights Reserved. Unify Theme by <a target="_blank" href="https://twitter.com/htmlstream">Htmlstream</a></p>
