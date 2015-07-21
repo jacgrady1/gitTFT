@@ -39,7 +39,8 @@ def course(request,id):
     lectures = Lecture.objects.filter(course__id=id)
     #print lectures
     for lecture in lectures:
-        print lecture.chapter_set.all()
+       print lecture.chapter_set.all()
+
     context={'course':course,
              'questions':questions,
              'lecturers':lecturer,

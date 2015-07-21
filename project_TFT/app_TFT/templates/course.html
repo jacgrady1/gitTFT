@@ -213,8 +213,9 @@
                     <div class="headline-v2"><h2>话题</h2></div>
                     <!-- Tags v2 -->
                     <ul class="list-inline tags-v2 margin-bottom-50">
-                        <li><a href="#">#我们的口语小组#</a></li>
-                        <li><a href="#">#口语好是怎样一番体验#</a></li>
+                        {% for hashtag in course.hashtag_set.all%}
+                        <li><a href="{{hashtag.url}}" target="_blank">#{{hashtag.name}}#</a></li>
+                        {% endfor %}
                     </ul>
                     <!-- End Tags v2 -->
                 </div>
