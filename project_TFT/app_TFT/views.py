@@ -7,8 +7,16 @@ def home(request):
     courses=['课程']
     courses = Course.objects.all()
     teachers = Teacher.objects.all()
+    lecturers=[]
+    coaches=[]
+    for teacher in teachers:
+        if teacher.role=='Lecturer':
+            lecturers.append(teacher)
+        else:
+            coaches.append(teacher)
+    #print "teacher:",lecturers
     context={'courses':courses,
-             'teachers':teachers}
+             'lecturers':lecturers}
     return render(request, "index.html", context)
 
 
