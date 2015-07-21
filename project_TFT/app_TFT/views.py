@@ -20,12 +20,6 @@ def home(request):
     return render(request, "index.html", context)
 
 
-def app(request):
-    # tool page 
-    context={}
-    return render(request,"index.html",context)
-
-
 def course(request,id):
     # course page 
     context={}
@@ -39,12 +33,18 @@ def course(request,id):
             lecturer.append(teacher)
         else:
             coaches.append(teacher)
-    print "teacher:",lecturer
-    print "coach:",coaches
+    #print "teacher:",lecturer
+    #print "coach:",coaches
+
+    lectures = Lecture.objects.filter(course__id=id)
+    #print lectures
+    for lecture in lectures:
+        print lecture.chapter_set.all()
     context={'course':course,
              'questions':questions,
              'lecturers':lecturer,
-             'coaches':coaches
+             'coaches':coaches,
+             'lectures':lectures
              }
     return render(request,"course.html",context)
     

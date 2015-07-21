@@ -11,9 +11,7 @@ from django.conf import settings
 urlpatterns = patterns('',
     # home page     
     url(r'^$', 'app_TFT.views.home',name='home'),
-    # tool page 
-    url(r'^$', 'app_TFT.views.app',name='app'), 
-    
+
     # course page /(?P<id>\d+) 
     url(r'^course/(?P<id>\d+)$', 'app_TFT.views.course', name='course'),
 

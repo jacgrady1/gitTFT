@@ -77,24 +77,20 @@
                                 <div class="panel panel-default">
                                     <div class="tag-box tag-box-v3">
                                         <div class="heading heading-v1">
-                                            <h2>3 Double Line Deviders</h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+                                            <h2>{{course.name}}</h2>
+                                            <p>{{course.description}}</p>
                                         </div>
-                                        <hr class="devider devider-db">
-                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">D</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                                        {% for lecture in lectures%}
                                         <hr class="devider devider-db-dotted">
-                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">E</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
-                                        <hr class="devider devider-db-dashed">
-                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">F</span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                                        <p><span class="dropcap dropcap-bg rounded-x bg-color-grey">{{lecture.num}}</span>{{lecture.name}}</p>
+                                        <ul class="list-unstyled">
+                                            {% for chapter in lecture.chapter_set.all %}
+                                            <li><i class="fa fa-check color-green"></i> {{chapter.content}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endfor %}
                                     </div>
-                                    <!--<div class="panel-heading">-->
-                                    <!--<h4 class="panel-title">-->
-                                    <!--{{course.name}}-->
-                                    <!--</h4>-->
-                                    <!--</div>-->
-                                    <!--<div class="panel-body">-->
-                                    <!--{{course.description}}-->
-                                    <!--</div>-->
+
                                 </div>
                             </div>
                         </div>
