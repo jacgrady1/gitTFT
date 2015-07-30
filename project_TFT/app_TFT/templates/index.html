@@ -53,7 +53,7 @@
                                 data-captionhidden="off"
                                 style="z-index: 6">
                                 <span class="page-scroll"><a href="{% url 'course' course.id %}"  class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
-                                
+                                <span class="page-scroll"><a href="{% url 'course_register' course.id %}"  class="btn-u btn-brd btn-brd-hover btn-u-light">我要报名</a></span>
                             </div>
                         </li>
                     {% endfor %}
@@ -175,7 +175,7 @@
                             {% for lecturer in lecturers%}
                                 <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
                                     <div class="team-img">
-                                        <img class="img-responsive" src="{{lecturer.picture.url}}" alt="/static/img/team/img5-md.jpg">
+                                        <img class="img-responsive" src="{{lecturer.picture.url}}" alt="/static/img/team/img5-md.jpg" width="275" height="275">
                                         <!-- <ul>
                                             <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
@@ -190,38 +190,7 @@
                         </ul>
                     </div>
                 </div>
-                <!--  <div class="parallax-counter parallaxBg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="counters">
-                                    <span class="counter">10629</span>
-                                    <h4>Users</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="counters">
-                                    <span class="counter">277</span>
-                                    <h4>Projects</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="counters">
-                                    <span class="counter">78</span>
-                                    <h4>Team Members</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="counters">
-                                    <span class="counter">109</span>
-                                    <h4>Awards</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    -->     
+
     </section>
     {% endblock %}
 
@@ -231,8 +200,8 @@
     <section id="barcode" class="contacts-section">
     <div class="container content-lg">
         <div class="title-v1">
-            <h2>更多分享</h2>
-            <p>关注功勋老师的留学分享微信订阅号（微信扫描下方的二维码）</p>
+            <h2>扫一扫</h2>
+            <p>请关注功勋老师的留学分享微信订阅号（微信扫描下方的二维码）</p>
             <p>
                 <img src="/static/img/barcode/barcode.jpg" style="max-height: 25%; max-width:25%;">
             </p>

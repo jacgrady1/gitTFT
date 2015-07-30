@@ -26,11 +26,13 @@ def course(request,id):
     course = Course.objects.get(id=id)
     questions = Question.objects.filter(course__id=id)
     teachers = Teacher.objects.filter(course=course)
-    lecturer=[]
+    lecturers=[]
     coaches=[]
     for teacher in teachers:
-        if teacher.role=='Lecturer':
-            lecturer.append(teacher)
+
+        if teacher.role=='l':
+            lecturers.append(teacher)
+
         else:
             coaches.append(teacher)
     #print "teacher:",lecturer
@@ -43,9 +45,18 @@ def course(request,id):
 
     context={'course':course,
              'questions':questions,
-             'lecturers':lecturer,
+             'lecturers':lecturers,
              'coaches':coaches,
              'lectures':lectures
              }
     return render(request,"course.html",context)
-    
+
+
+def course_register(request,id):
+    # currently course_register is the same with course page.
+    context={}
+    course = Course.objects.get(id=id)
+    print course
+    context={'course':course}
+    return render(request,"course_register.html",context)
+

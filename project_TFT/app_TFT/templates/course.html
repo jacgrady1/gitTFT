@@ -43,6 +43,20 @@
                             {{course.brief}}<br>
                             Thirsty For Thirty
                         </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-3 sft"
+                                data-x="center"
+                                data-hoffset="0"
+                                data-y="360"
+                                data-speed="1000"
+                                data-start="100"
+                                data-easing="Power4.easeOut"
+                                data-endspeed="300"
+                                data-endeasing="Power1.easeIn"
+                                data-captionhidden="off"
+                                style="z-index: 6">
+                               <span class="page-scroll"><a href="{% url 'course_register' course.id %}"  class="btn-u btn-brd btn-brd-hover btn-u-light">我要报名</a></span>
+                        </div>
                     </li>
                     
                 </ul>
@@ -119,14 +133,14 @@
                                             <div class="panel-body">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <img class="img-responsive" src="{{lecturer.picture.url}}" alt="">
+                                                        <img class="img-responsive" src="{{lecturer.picture.url}}" alt="" style="width: 175px; height: 175px; max-height:175px;max-width:175px;">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <h2>{{lecturer.name}}</h2>
                                                         <ul class="list-unstyled">
+                                                            <li><i class="fa fa-check color-green"></i> 讲授 {% for course in lecturer.course.all %}{{course.name}} {% endfor%}</li>
+                                                            <li><i class="fa fa-check color-green"></i> 毕业于{{lecturer.school}}</li>
                                                             <li><i class="fa fa-check color-green"></i> {{lecturer.description}}</li>
-                                                            <li><i class="fa fa-check color-green"></i> Fusce dapibus, tellus ac cursus comodo egetine..</li>
-                                                            <li><i class="fa fa-check color-green"></i> Food truck quinoa nesciunt laborum eiusmod runch..</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -140,14 +154,15 @@
                                             <div class="panel-body">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <img class="img-responsive" src="{{coach.picture.url}}" alt="">
+                                                        <img class="img-responsive" src="{{coach.picture.url}}" alt="/static/img/team/img5-md.jpg"  style="width: 175px; height: 175px; max-height:175px;max-width:175px;">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <h2>{{coach.name}}</h2>
                                                         <ul class="list-unstyled">
+                                                            <li><i class="fa fa-check color-green"></i> 职教 {% for course in coach.course.all %}{{course.name}} {% endfor%}</li>
+                                                            <li><i class="fa fa-check color-green"></i> 毕业于{{coach.school}}</li>
                                                             <li><i class="fa fa-check color-green"></i> {{coach.description}}</li>
-                                                            <li><i class="fa fa-check color-green"></i> Fusce dapibus, tellus ac cursus comodo egetine..</li>
-                                                            <li><i class="fa fa-check color-green"></i> Food truck quinoa nesciunt laborum eiusmod runch..</li>
+
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -188,11 +203,15 @@
                                 <div class="panel panel-default">
                                     <div class="panel-collapse collapse in" id="collapse-v4-One">
                                         <div class="panel-body">
-                                            个人报名:{{course.price}}元<br>多人报名：{{course.group_price}}元 <br>优惠：{{course.promotion_info}}
+                                            个人报名: {{course.price}}元<br>多人报名: {{course.group_price}}元 <br>优惠：{{course.promotion_info}}
+
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
+
                         </div>
                         <!-- Tab Content 4 -->
                     </div>
@@ -205,7 +224,7 @@
                     <!-- Trending -->
                     <ul class="list-unstyled blog-trending margin-bottom-50">
                         <li>
-                            <h3><a href="#">口语第{{course.alias}}期课程正在招生</a></h3>
+                            <h3><a href="#">{{course.name}}第{{course.alias}}期课程正在招生</a></h3>
                             <small>{{course.start_date}} / {{course.start_time}}</small>
                         </li>
                     </ul>

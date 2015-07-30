@@ -15,6 +15,9 @@ urlpatterns = patterns('',
     # course page /(?P<id>\d+) 
     url(r'^course/(?P<id>\d+)$', 'app_TFT.views.course', name='course'),
 
+    #register course page
+    url(r'^course/(?P<id>\d+)/register$', 'app_TFT.views.course_register', name='course_register'),
+
     # login/logout
     url(r'^login$', 'django.contrib.auth.views.login', {'template_name':'page_login.html'},name='login'),
     url(r'^logout$', 'django.contrib.auth.views.logout_then_login',name="logout"),
