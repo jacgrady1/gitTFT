@@ -36,14 +36,14 @@ class Teacher(models.Model):
     description = models.CharField(max_length=1000)
     picture = models.ImageField(upload_to='photos/teacher_photos',blank=True)
 
-    LECTURER = 'l'
-    COACH = 'c'
+    LECTURER = 'Lecturer'
+    COACH = 'Coach'
 
     ROLE_CHOICES = (
         (LECTURER, 'Lecturer'),
         (COACH, 'Coach'),
     )
-    role = models.CharField(max_length=1,choices=ROLE_CHOICES,default=LECTURER)
+    role = models.CharField(max_length=10,choices=ROLE_CHOICES,default=LECTURER)
 
     def __unicode__(self):
         return self.name

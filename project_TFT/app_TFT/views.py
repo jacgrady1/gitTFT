@@ -14,7 +14,7 @@ def home(request):
             lecturers.append(teacher)
         else:
             coaches.append(teacher)
-    #print "teacher:",lecturers
+    print "teacher:",len(lecturers)
     context={'courses':courses,
              'lecturers':lecturers}
     return render(request, "index.html", context)
@@ -30,12 +30,12 @@ def course(request,id):
     coaches=[]
     for teacher in teachers:
 
-        if teacher.role=='l':
+        if teacher.role=='Lecturer':
             lecturers.append(teacher)
 
         else:
             coaches.append(teacher)
-    #print "teacher:",lecturer
+    print "lecturers:",lecturers
     #print "coach:",coaches
 
     lectures = Lecture.objects.filter(course__id=id)
